@@ -8,6 +8,7 @@ RUN apt-get -qq update && \
 	rm -rf /var/lib/apt/lists/*
 
 ENV PODCASTGEN_VERSION 3.0.1
+ENV PODCASTGEN_DIR /var/www/PodcastGenerator-${PODCASTGEN_VERSION}
 
 EXPOSE 80
 
